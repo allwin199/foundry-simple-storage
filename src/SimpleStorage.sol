@@ -10,7 +10,7 @@ contract SimpleStorage {
     }
 
     Person[] public listOfPeople;
-    mapping(string => uint256) public favOfPeople;
+    mapping(string person => uint256 favNumber) public favOfPeople;
 
     function store(uint256 _favouriteNumber) public {
         myFavouriteNumber = _favouriteNumber;
